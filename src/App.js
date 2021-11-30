@@ -1,28 +1,12 @@
 import './App.css';
-import Nav from './components/Nav';
+import SideContainer from './components/SideContainer';
+import ContentPane from './components/ContentPane';
 
 function App() {
-  const links = [
-    {
-      name:"foo",
-      href:"/foo"
-    },
-    {
-      name:"bar",
-      href:"/bar"
-    },
-    {
-      name:"test",
-      href:"/test"
-    },
-    {
-      name:"asf",
-      href:"/asf"
-    },
-  ]
   return (
     <div className="App">
-      <Nav links={links}/>
+      <SideContainer />
+      <ContentPane />
     </div>
   );
 }

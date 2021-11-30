@@ -1,5 +1,19 @@
 function Nav(props) {
-    const navListItems = props.links.map(link => {
+    const mainLinks = [
+        {
+            name:"Home",
+            href:"/"
+        },
+        {
+            name:"Search",
+            href:"/search"
+        },
+        {
+            name:"Your Library",
+            href:"/library"
+        },
+    ]
+    const navListItems = mainLinks.map(link => {
         return <li><a href={link.href}>{link.name}</a></li>
     })
 
